@@ -2,64 +2,34 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+	return (
+		<div className={styles.container}>
+			<Head>
+				<title>Create Next App</title>
+				<link rel="icon" href="/favicon.ico"/>
+			</Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+			<div className={styles.logo}/>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+			<main className={styles.main}>
+				<h1 className={styles.title}>
+					Android Developer 開發者讀書會
+				</h1>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+				<p className={styles.description}>
+					嗨！您好：
+					這裏是 Taiwan Android Developer Study Group，不管你是想學新技術、想詢問技術問題、想找相關工作或是想找技術社群進行作品累積的人，都歡迎您參加。
+				</p>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+				<p className={styles.description}>
+					社群目前每週三固定於天瓏書局2樓舉辦 CodeClub，近年來最大的活動是舉辦GDG Devfest，有固定的常駐志工會回答及不定期技術分享，也長期的與不同的技術社群進行交流、如Android Taipei, GDG
+					Taipei, Kotlin Taipei。
+				</p>
+			</main>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+			<footer className={styles.footer}>
+				Copyright © 2021 taiwan android developer study group . All rights reserved.
+			</footer>
+		</div>
+	)
 }
